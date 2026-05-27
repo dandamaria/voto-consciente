@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import navbarBg from "../assets/navbar_fundo.png"
 
 function Navbar() {
@@ -23,15 +24,15 @@ function Navbar() {
 
         {/* Links — só aparecem no desktop */}
         <div className="hidden md:flex items-center gap-3">
-          <a href="#" className="px-4 py-1.5 rounded-full border border-white/40 bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium text-sm">
+          <Link to="/sobre-nos" className="px-4 py-1.5 rounded-full border border-white/40 bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium text-sm">
             Sobre nós
-          </a>
-          <a href="#" className="flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-white/40 bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium text-sm">
+          </Link>
+          <Link to="/" className="flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-white/40 bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium text-sm">
           Quem me representa
-         </a>
-          <a href="#" className="px-4 py-1.5 rounded-full border border-white/40 bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium text-sm">
+         </Link>
+          <Link to="/candidatos" className="px-4 py-1.5 rounded-full border border-white/40 bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium text-sm">
             Conheça os candidatos
-          </a>
+          </Link>
         </div>
 
         {/* Botão de tema — só no desktop */}
@@ -52,15 +53,15 @@ function Navbar() {
       {/* Menu mobile — abre e fecha */}
       {menuAberto && (
         <div className="md:hidden flex flex-col gap-2 px-6 pb-4">
-          <a href="#" className="px-4 py-2 rounded-xl bg-white/80 text-gray-700 font-medium text-sm">
+          <Link to="/sobre-nos" className="px-4 py-2 rounded-xl bg-white/80 text-gray-700 font-medium text-sm">
             Sobre nós
-          </a>
-          <a href="#" className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/80 text-gray-700 font-medium text-sm">
+          </Link>
+          <Link to="/" className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/80 text-gray-700 font-medium text-sm">
             Quem me representa
-          </a>
-          <a href="#" className="px-4 py-2 rounded-xl bg-white/80 text-gray-700 font-medium text-sm">
+          </Link>
+          <Link to="/candidatos" className="px-4 py-2 rounded-xl bg-white/80 text-gray-700 font-medium text-sm">
             Conheça os candidatos
-          </a>
+          </Link>
         </div>
       )}
 
