@@ -13,13 +13,13 @@ const categorias = [
   "Segurança",
 ]
 
-function QMR() {
-  const [aberto, setAberto] = useState(false)
-  const [selecionado, setSelecionado] = useState(null)
+function QMR({ categoriaSelecionada, onSelecionarCategoria }) {
+  const [aberto, setAberto] = useState(false) //estado do menu que abre e fecha
+  const selecionado = categoriaSelecionada //só um apelido pra categoriaSelecionada
 
   function selecionar(categoria) {
-    setSelecionado(categoria)
-    setAberto(false)
+    onSelecionarCategoria(categoria) //seleciona categoria 
+    setAberto(false) //fecha o menu
   }
 
   return (
@@ -62,7 +62,7 @@ function QMR() {
 
                 {/* Botão */}
                 <button
-                  onClick={() => setAberto(!aberto)}
+                  onClick={() => setAberto(!aberto)} //abre ou fecha o menu - vai fazer sempre o contrário do estado que tá
                   className="flex items-center justify-between w-full px-5 py-4 border border-gray-300 rounded-xl text-gray-700 font-medium hover:bg-gray-50"
                 >
                   <span>{selecionado ?? "Selecionar Categoria"}</span>

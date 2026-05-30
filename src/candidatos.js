@@ -3,294 +3,625 @@ export const candidatos = [
 id: 1,
 nome: "Candidato A",
 partido: "Partido X",
-foto: "src\assets\candidatos\candidato_a.svg",
+foto: "/src/assets/candidatos/candidato_a.svg",
 propostas: {
-"Economia": {
-posicao: "a favor",
-descricao: "Proposta favorável à economia de mercado e redução de impostos para empresas."
-},
-"Educação": {
-posicao: "neutro",
-descricao: "Sem posicionamento claro sobre reformas educacionais."
-},
-"Saúde": {
-posicao: "contra",
-descricao: "Contrário à expansão do sistema público de saúde."
-},
-"Segurança": {
-posicao: "a favor",
-descricao: "Defende aumento do efetivo policial e penas mais rígidas."
-},
-"Meio Ambiente": {
-posicao: "contra",
-descricao: "Contrário a restrições ambientais no setor agropecuário."
-},
-"Direitos Civis": {
-posicao: "misto",
-descricao: "Apoia alguns direitos civis mas é contrário a outros avanços."
-},
-"Religião no Estado": {
-posicao: "a favor",
-descricao: "Defende maior presença de valores religiosos nas políticas públicas."
-},
-"Privatização": {
-posicao: "a favor",
-descricao: "Favorável à privatização de estatais e serviços públicos."
-},
-"Impostos": {
-posicao: "contra",
-descricao: "Contrário ao aumento de impostos para qualquer faixa de renda."
-},
-"Programas Sociais": {
-posicao: "misto",
-descricao: "Apoia programas sociais focalizados mas é contra expansão ampla."
-},
+"Economia": [
+{ id: "1-eco-1", titulo: "Redução de impostos", descricao: "Propõe corte de impostos para pequenas empresas visando geração de empregos." },
+{ id: "1-eco-2", titulo: "Incentivo ao empreendedorismo", descricao: "Defende linhas de crédito facilitadas para novos negócios." },
+{ id: "1-eco-3", titulo: "Redução de impostos", descricao: "Propõe corte de impostos para pequenas empresas visando geração de empregos." },
+{ id: "1-eco-4", titulo: "Incentivo ao empreendedorismo", descricao: "Defende linhas de crédito facilitadas para novos negócios." },
+],
+"Educação": [
+{ id: "1-edu-1", titulo: "Ensino técnico", descricao: "Propõe expansão de escolas técnicas federais em todo o país." },
+],
+"Saúde": [
+{ id: "1-sau-1", titulo: "Parcerias público-privadas", descricao: "Defende gestão privada de hospitais públicos para maior eficiência." },
+{ id: "1-sau-2", titulo: "Telemedicina", descricao: "Propõe expansão da telemedicina para regiões remotas." },
+{ id: "1-sau-3", titulo: "Redução de filas", descricao: "Propõe sistema digital de agendamento para reduzir filas no SUS." },
+],
+"Segurança": [
+{ id: "1-seg-1", titulo: "Mais efetivo policial", descricao: "Defende aumento do número de policiais nas ruas." },
+{ id: "1-seg-2", titulo: "Penas mais rígidas", descricao: "Propõe endurecimento das penas para crimes violentos." },
+],
+"Meio Ambiente": [
+{ id: "1-mei-1", titulo: "Revisão de regulações", descricao: "Contrário a restrições ambientais que impactam o agronegócio." },
+],
+"Direitos Civis": [
+{ id: "1-dir-1", titulo: "Posição mista", descricao: "Apoia alguns direitos civis mas é contrário a outros avanços." },
+],
+"Religião no Estado": [
+{ id: "1-rel-1", titulo: "Valores religiosos", descricao: "Defende maior presença de valores religiosos nas políticas públicas." },
+],
+"Privatização": [
+{ id: "1-pri-1", titulo: "Privatização de estatais", descricao: "Favorável à privatização de estatais e serviços públicos." },
+{ id: "1-pri-2", titulo: "Concessões", descricao: "Defende modelo de concessões para infraestrutura." },
+],
+"Impostos": [
+{ id: "1-imp-1", titulo: "Contra aumento de impostos", descricao: "Contrário ao aumento de impostos para qualquer faixa de renda." },
+],
+"Programas Sociais": [
+{ id: "1-pro-1", titulo: "Programas focalizados", descricao: "Apoia programas sociais condicionados à capacitação profissional." },
+{ id: "1-pro-2", titulo: "Contra expansão ampla", descricao: "Contrário à expansão irrestrita de benefícios sociais." },
+],
 }
 },
 {
 id: 2,
 nome: "Candidato B",
 partido: "Partido Y",
-foto: "src\assets\candidatos\candidato_b.svgg",
+foto: "/src/assets/candidatos/candidato_b.svg",
 propostas: {
-"Economia": {
-posicao: "contra",
-descricao: "Defende maior intervenção do estado na economia."
-},
-"Educação": {
-posicao: "a favor",
-descricao: "Propõe aumento de investimento em educação pública."
-},
-"Saúde": {
-posicao: "a favor",
-descricao: "Defende expansão e fortalecimento do SUS."
-},
-"Segurança": {
-posicao: "misto",
-descricao: "Apoia segurança pública mas com foco em prevenção social."
-},
-"Meio Ambiente": {
-posicao: "a favor",
-descricao: "Defende políticas ambientais rígidas e transição energética."
-},
-"Direitos Civis": {
-posicao: "a favor",
-descricao: "Apoia ampliação de direitos civis para minorias."
-},
-"Religião no Estado": {
-posicao: "contra",
-descricao: "Defende separação total entre estado e religião."
-},
-"Privatização": {
-posicao: "contra",
-descricao: "Contrário à privatização de serviços essenciais."
-},
-"Impostos": {
-posicao: "a favor",
-descricao: "Defende taxação progressiva para financiar políticas sociais."
-},
-"Programas Sociais": {
-posicao: "a favor",
-descricao: "Propõe expansão ampla de programas sociais."
-},
+"Economia": [
+{ id: "2-eco-1", titulo: "Controle estatal", descricao: "Defende maior intervenção do estado em setores estratégicos." },
+],
+"Educação": [
+{ id: "2-edu-1", titulo: "Universidades públicas", descricao: "Propõe aumento do investimento em universidades federais." },
+{ id: "2-edu-2", titulo: "Valorização docente", descricao: "Defende piso salarial nacional para professores." },
+],
+"Saúde": [
+{ id: "2-sau-1", titulo: "Expansão do SUS", descricao: "Defende expansão e fortalecimento do sistema único de saúde." },
+{ id: "2-sau-2", titulo: "Atenção básica", descricao: "Propõe ampliação de unidades básicas de saúde em periferias." },
+],
+"Segurança": [
+{ id: "2-seg-1", titulo: "Prevenção social", descricao: "Propõe políticas preventivas como principal estratégia de segurança." },
+],
+"Meio Ambiente": [
+{ id: "2-mei-1", titulo: "Combate ao desmatamento", descricao: "Defende políticas ambientais rígidas e fiscalização reforçada." },
+{ id: "2-mei-2", titulo: "Transição energética", descricao: "Propõe investimento em energia renovável e redução do uso de combustíveis fósseis." },
+],
+"Direitos Civis": [
+{ id: "2-dir-1", titulo: "Inclusão social", descricao: "Apoia ampliação de direitos civis para minorias." },
+{ id: "2-dir-2", titulo: "Igualdade racial", descricao: "Defende políticas afirmativas para redução da desigualdade racial." },
+],
+"Religião no Estado": [
+{ id: "2-rel-1", titulo: "Estado laico", descricao: "Defende separação total entre estado e religião." },
+],
+"Privatização": [
+{ id: "2-pri-1", titulo: "Contra privatizações", descricao: "Contrário à venda de empresas e serviços públicos essenciais." },
+],
+"Impostos": [
+{ id: "2-imp-1", titulo: "Tributação progressiva", descricao: "Defende taxação progressiva para financiar políticas sociais." },
+{ id: "2-imp-2", titulo: "Imposto sobre grandes fortunas", descricao: "Propõe tributação sobre patrimônios acima de R$ 10 milhões." },
+],
+"Programas Sociais": [
+{ id: "2-pro-1", titulo: "Expansão de benefícios", descricao: "Propõe expansão ampla de programas de transferência de renda." },
+{ id: "2-pro-2", titulo: "Habitação popular", descricao: "Defende programa nacional de construção de moradias populares." },
+],
 }
 },
+/*
+--------------------------------------------candidato 3--------------------------------------------
+*/
 {
-id: 3,
+id: 1,
 nome: "Candidato C",
 partido: "Partido Z",
-foto: "src\assets\candidatos\candidato_c.svg",
+foto: "/src/assets/candidatos/candidato_c.svg",
 propostas: {
-"Economia": { posicao: "misto", descricao: "Proposta econômica equilibrada entre mercado e estado." },
-"Educação": { posicao: "misto", descricao: "Apoia reformas pontuais sem grandes mudanças estruturais." },
-"Saúde": { posicao: "misto", descricao: "Defende parceria público-privada na saúde." },
-"Segurança": { posicao: "a favor", descricao: "Propõe modernização das forças de segurança." },
-"Meio Ambiente": { posicao: "misto", descricao: "Busca equilíbrio entre desenvolvimento e preservação." },
-"Direitos Civis": { posicao: "neutro", descricao: "Sem posicionamento claro sobre direitos civis." },
-"Religião no Estado": { posicao: "neutro", descricao: "Não se posiciona sobre religião no estado." },
-"Privatização": { posicao: "misto", descricao: "Favorável à privatização apenas em setores específicos." },
-"Impostos": { posicao: "misto", descricao: "Defende reforma tributária sem aumento da carga total." },
-"Programas Sociais": { posicao: "neutro", descricao: "Sem propostas claras para programas sociais." },
+"Economia": [
+{ id: "3-eco-1", titulo: "Controle estatal", descricao: "Propõe controle do estado sobre todos os bancos existentes" },
+{ id: "3-eco-2", titulo: "Presidente vira um rei kkkk", descricao: "Presidente deter todo o poder economico do país" },
+],
+"Educação": [
+{ id: "3-edu-1", titulo: "Ensino técnico", descricao: "Propõe que todas as escolas técnicas tenham taxas de inscrição e mensalidade seguindo uma porcentagem pré-estabelecida em cima de um teto/piso definido também" },
+],
+"Saúde": [
+{ id: "3-sau-1", titulo: "Parcerias público-privadas", descricao: "Defende gestão privada de hospitais públicos para maior eficiência." },
+{ id: "3-sau-2", titulo: "Telemedicina", descricao: "Propõe expansão da telemedicina para regiões remotas." },
+],
+"Segurança": [
+{ id: "3-seg-1", titulo: "Mais efetivo policial", descricao: "Defende aumento do número de policiais nas ruas." },
+{ id: "3-seg-2", titulo: "Penas mais rígidas", descricao: "Propõe endurecimento das penas para crimes violentos." },
+],
+"Meio Ambiente": [
+{ id: "3-mei-1", titulo: "Revisão de regulações", descricao: "Contrário a restrições ambientais que impactam o agronegócio." },
+],
+"Direitos Civis": [
+{ id: "3-dir-1", titulo: "Posição mista", descricao: "Apoia alguns direitos civis mas é contrário a outros avanços." },
+],
+"Religião no Estado": [
+{ id: "3-rel-1", titulo: "Valores religiosos", descricao: "Defende maior presença de valores religiosos nas políticas públicas." },
+],
+"Privatização": [
+  { id: "3-pri-2", titulo: "Concessões", descricao: "Defende modelo de concessões para infraestrutura." },
+  { id: "3-pri-1", titulo: "Privatização de estatais", descricao: "Favorável à privatização de estatais e serviços públicos." },
+],
+"Impostos": [
+{ id: "3-imp-1", titulo: "Contra aumento de impostos", descricao: "Contrário ao aumento de impostos para qualquer faixa de renda." },
+],
+"Programas Sociais": [
+{ id: "3-pro-1", titulo: "Programas focalizados", descricao: "Apoia programas sociais condicionados à capacitação profissional." },
+{ id: "3-pro-2", titulo: "Contra expansão ampla", descricao: "Contrário à expansão irrestrita de benefícios sociais." },
+],
 }
 },
+/*
+---------------------------------------candidato 4--------------------------------------------
+*/
 {
-  id: 4,
-  nome: "Candidato D",
-  partido: "Partido W",
-  foto: "src\assets\candidatos\candidato_d.svg",
-  propostas: {
-    "Economia": { posicao: "a favor", descricao: "Defende incentivo ao empreendedorismo e redução de burocracias." },
-    "Educação": { posicao: "a favor", descricao: "Propõe ampliação de escolas técnicas e ensino integral." },
-    "Saúde": { posicao: "misto", descricao: "Defende fortalecimento do SUS com parcerias privadas." },
-    "Segurança": { posicao: "a favor", descricao: "Propõe integração tecnológica nas forças policiais." },
-    "Meio Ambiente": { posicao: "misto", descricao: "Busca equilíbrio entre desenvolvimento econômico e preservação." },
-    "Direitos Civis": { posicao: "neutro", descricao: "Sem propostas específicas para direitos civis." },
-    "Religião no Estado": { posicao: "misto", descricao: "Defende diálogo entre estado e grupos religiosos." },
-    "Privatização": { posicao: "a favor", descricao: "Apoia privatizações em setores estratégicos." },
-    "Impostos": { posicao: "contra", descricao: "Defende simplificação tributária e redução gradual de impostos." },
-    "Programas Sociais": { posicao: "misto", descricao: "Apoia programas sociais condicionados à capacitação profissional." },
-  }
+id: 4,
+nome: "Candidato D",
+partido: "Partido H",
+foto: "/src/assets/candidatos/candidato_e.svg",
+propostas: {
+"Economia": [
+{ id: "4-eco-1", titulo: "Controle estatal", descricao: "Defende maior intervenção do estado em setores estratégicos." },
+],
+"Educação": [
+{ id: "4-edu-1", titulo: "Universidades públicas", descricao: "Propõe aumento do investimento em universidades federais." },
+],
+"Saúde": [
+{ id: "4-sau-1", titulo: "Expansão do SUS", descricao: "Defende expansão e fortalecimento do sistema único de saúde." },
+{ id: "4-sau-2", titulo: "Atenção básica", descricao: "Propõe ampliação de unidades básicas de saúde em periferias." },
+],
+"Segurança": [
+{ id: "4-seg-1", titulo: "Prevenção social", descricao: "Propõe políticas preventivas como principal estratégia de segurança." },
+],
+"Meio Ambiente": [
+{ id: "4-mei-1", titulo: "Combate ao desmatamento", descricao: "Defende políticas ambientais rígidas e fiscalização reforçada." },
+{ id: "4-mei-2", titulo: "Transição energética", descricao: "Propõe investimento em energia renovável e redução do uso de combustíveis fósseis." },
+],
+"Direitos Civis": [
+{ id: "4-dir-1", titulo: "Inclusão social", descricao: "Apoia ampliação de direitos civis para minorias." },
+{ id: "4-dir-2", titulo: "Igualdade racial", descricao: "Defende políticas afirmativas para redução da desigualdade racial." },
+],
+"Religião no Estado": [
+{ id: "4-rel-1", titulo: "Estado laico", descricao: "Defende separação total entre estado e religião." },
+],
+"Privatização": [
+{ id: "4-pri-1", titulo: "Contra privatizações", descricao: "Contrário à venda de empresas e serviços públicos essenciais." },
+],
+"Impostos": [
+{ id: "4-imp-1", titulo: "Tributação progressiva", descricao: "Defende taxação progressiva para financiar políticas sociais." },
+{ id: "4-imp-2", titulo: "Imposto sobre grandes fortunas", descricao: "Propõe tributação sobre patrimônios acima de R$ 10 milhões." },
+],
+"Programas Sociais": [
+{ id: "4-pro-1", titulo: "Expansão de benefícios", descricao: "Propõe expansão ampla de programas de transferência de renda." },
+{ id: "4-pro-2", titulo: "Habitação popular", descricao: "Defende programa nacional de construção de moradias populares." },
+],
+}
 },
+
+/*
+---------------------------------------candidato 5--------------------------------------------
+*/
+
 {
   id: 5,
   nome: "Candidato E",
   partido: "Partido Q",
-  foto: "src\assets\candidatos\candidato_e.svg",
+  foto: "/src/assets/candidatos/candidato_e.svg",
   propostas: {
-    "Economia": { posicao: "contra", descricao: "Defende maior controle estatal sobre setores estratégicos." },
-    "Educação": { posicao: "a favor", descricao: "Propõe aumento do investimento em universidades públicas." },
-    "Saúde": { posicao: "a favor", descricao: "Defende expansão da atenção básica e contratação de profissionais." },
-    "Segurança": { posicao: "misto", descricao: "Propõe políticas preventivas aliadas ao policiamento." },
-    "Meio Ambiente": { posicao: "a favor", descricao: "Defende combate rigoroso ao desmatamento ilegal." },
-    "Direitos Civis": { posicao: "a favor", descricao: "Propõe ampliação de políticas de inclusão social." },
-    "Religião no Estado": { posicao: "contra", descricao: "Defende estado totalmente laico." },
-    "Privatização": { posicao: "contra", descricao: "Contrário à venda de empresas públicas." },
-    "Impostos": { posicao: "a favor", descricao: "Defende tributação progressiva sobre grandes fortunas." },
-    "Programas Sociais": { posicao: "a favor", descricao: "Propõe expansão de programas de transferência de renda." },
+  "Economia": [
+  { id: "5-eco-1", titulo: "Controle estatal", descricao: "Defende maior intervenção do estado em setores estratégicos." },
+  ],
+  "Educação": [
+  { id: "5-edu-1", titulo: "Universidades públicas", descricao: "Propõe aumento do investimento em universidades federais." },
+  ],
+  "Saúde": [
+  { id: "5-sau-1", titulo: "Expansão do SUS", descricao: "Defende expansão e fortalecimento do sistema único de saúde." },
+  { id: "5-sau-2", titulo: "Atenção básica", descricao: "Propõe ampliação de unidades básicas de saúde em periferias." },
+  ],
+  "Segurança": [
+  { id: "5-seg-1", titulo: "Mais efetivo policial", descricao: "Defende aumento do número de policiais nas ruas." },
+  { id: "5-seg-2", titulo: "Penas mais rígidas", descricao: "Propõe endurecimento das penas para crimes violentos." },
+  ],
+  "Meio Ambiente": [
+  { id: "5-mei-1", titulo: "Revisão de regulações", descricao: "Contrário a restrições ambientais que impactam o agronegócio." },
+  ],
+  "Direitos Civis": [
+  { id: "5-dir-1", titulo: "Posição mista", descricao: "Apoia alguns direitos civis mas é contrário a outros avanços." },
+  ],
+  "Religião no Estado": [
+  { id: "5-rel-1", titulo: "Valores religiosos", descricao: "Defende maior presença de valores religiosos nas políticas públicas." },
+  ],
+  "Privatização": [
+  { id: "5-pri-1", titulo: "Privatização de estatais", descricao: "Favorável à privatização de estatais e serviços públicos." },
+  { id: "5-pri-2", titulo: "Concessões", descricao: "Defende modelo de concessões para infraestrutura." },
+  ],
+  "Impostos": [
+  { id: "5-imp-1", titulo: "Contra aumento de impostos", descricao: "Contrário ao aumento de impostos para qualquer faixa de renda." },
+  ],
+  "Programas Sociais": [
+  { id: "5-pro-1", titulo: "Programas focalizados", descricao: "Apoia programas sociais condicionados à capacitação profissional." },
+  { id: "5-pro-2", titulo: "Contra expansão ampla", descricao: "Contrário à expansão irrestrita de benefícios sociais." },
+  ],
+  
+
   }
+  
 },
+/*
+---------------------------------------candidato 6--------------------------------------------
+*/
 {
   id: 6,
   nome: "Candidato F",
   partido: "Partido L",
   foto: "/src/assets/candidatos/candidato_f.svg",
   propostas: {
-    "Economia": { posicao: "misto", descricao: "Defende equilíbrio entre livre mercado e regulação estatal." },
-    "Educação": { posicao: "misto", descricao: "Propõe revisão curricular gradual nas escolas." },
-    "Saúde": { posicao: "misto", descricao: "Defende modernização da gestão hospitalar." },
-    "Segurança": { posicao: "a favor", descricao: "Propõe investimento em inteligência policial." },
-    "Meio Ambiente": { posicao: "misto", descricao: "Defende preservação ambiental com incentivo econômico sustentável." },
-    "Direitos Civis": { posicao: "neutro", descricao: "Sem posicionamento claro sobre pautas civis." },
-    "Religião no Estado": { posicao: "neutro", descricao: "Sem propostas relacionadas ao tema." },
-    "Privatização": { posicao: "misto", descricao: "Defende privatizações pontuais." },
-    "Impostos": { posicao: "misto", descricao: "Propõe revisão do sistema tributário atual." },
-    "Programas Sociais": { posicao: "neutro", descricao: "Sem propostas detalhadas sobre programas sociais." },
+  "Economia": [
+  { id: "6-eco-1", titulo: "Redução de impostos", descricao: "Propõe corte de impostos para pequenas empresas visando geração de empregos." },
+  { id: "6-eco-2", titulo: "Incentivo ao empreendedorismo", descricao: "Defende linhas de crédito facilitadas para novos negócios." },
+  ],
+  "Educação": [
+  { id: "6-edu-1", titulo: "Ensino técnico", descricao: "Propõe expansão de escolas técnicas federais em todo o país." },
+  ],
+  "Saúde": [
+  { id: "6-sau-1", titulo: "Parcerias público-privadas", descricao: "Defende gestão privada de hospitais públicos para maior eficiência." },
+  { id: "6-sau-2", titulo: "Telemedicina", descricao: "Propõe expansão da telemedicina para regiões remotas." },
+  { id: "6-sau-3", titulo: "Redução de filas", descricao: "Propõe sistema digital de agendamento para reduzir filas no SUS." },
+  ],
+  "Segurança": [
+  { id: "6-seg-1", titulo: "Mais efetivo policial", descricao: "Defende aumento do número de policiais nas ruas." },
+  { id: "6-seg-2", titulo: "Penas mais rígidas", descricao: "Propõe endurecimento das penas para crimes violentos." },
+  ],
+  "Meio Ambiente": [
+  { id: "6-mei-1", titulo: "Revisão de regulações", descricao: "Contrário a restrições ambientais que impactam o agronegócio." },
+  ],
+  "Direitos Civis": [
+  { id: "6-dir-1", titulo: "Posição mista", descricao: "Apoia alguns direitos civis mas é contrário a outros avanços." },
+  ],
+  "Religião no Estado": [
+  { id: "6-rel-1", titulo: "Valores religiosos", descricao: "Defende maior presença de valores religiosos nas políticas públicas." },
+  ],
+  "Privatização": [
+  { id: "6-pri-1", titulo: "Privatização de estatais", descricao: "Favorável à privatização de estatais e serviços públicos." },
+  { id: "6-pri-2", titulo: "Concessões", descricao: "Defende modelo de concessões para infraestrutura." },
+  ],
+  "Impostos": [
+  { id: "6-imp-1", titulo: "Contra aumento de impostos", descricao: "Contrário ao aumento de impostos para qualquer faixa de renda." },
+  ],
+  "Programas Sociais": [
+  { id: "6-pro-1", titulo: "Programas focalizados", descricao: "Apoia programas sociais condicionados à capacitação profissional." },
+  { id: "6-pro-2", titulo: "Contra expansão ampla", descricao: "Contrário à expansão irrestrita de benefícios sociais." },
+  ],
+    
   }
+  
 },
+
+/*
+---------------------------------------candidato 7--------------------------------------------
+*/
 {
   id: 7,
   nome: "Candidato G",
-  partido: "Partido N",
+  partido: "Partido M",
   foto: "/src/assets/candidatos/candidato_g.svg",
   propostas: {
-    "Economia": { posicao: "a favor", descricao: "Defende abertura econômica e acordos internacionais." },
-    "Educação": { posicao: "misto", descricao: "Propõe maior autonomia escolar." },
-    "Saúde": { posicao: "contra", descricao: "Contrário à expansão do gasto público na saúde." },
-    "Segurança": { posicao: "a favor", descricao: "Defende endurecimento das leis penais." },
-    "Meio Ambiente": { posicao: "contra", descricao: "Contrário a regulações ambientais rígidas." },
-    "Direitos Civis": { posicao: "misto", descricao: "Apoia parcialmente pautas de direitos civis." },
-    "Religião no Estado": { posicao: "a favor", descricao: "Defende participação religiosa em debates públicos." },
-    "Privatização": { posicao: "a favor", descricao: "Apoia privatização ampla de estatais." },
-    "Impostos": { posicao: "contra", descricao: "Defende redução da carga tributária." },
-    "Programas Sociais": { posicao: "contra", descricao: "Contrário à expansão de benefícios sociais." },
+  "Economia": [
+  { id: "7-eco-1", titulo: "Redução de impostos", descricao: "Propõe corte de impostos para pequenas empresas visando geração de empregos." },
+  { id: "7-eco-2", titulo: "Incentivo ao empreendedorismo", descricao: "Defende linhas de crédito facilitadas para novos negócios." },
+  ],
+  "Educação": [
+  { id: "7-edu-1", titulo: "Ensino técnico", descricao: "Propõe expansão de escolas técnicas federais em todo o país." },
+  ],
+  "Saúde": [
+  { id: "7-sau-1", titulo: "Parcerias público-privadas", descricao: "Defende gestão privada de hospitais públicos para maior eficiência." },
+  { id: "7-sau-2", titulo: "Telemedicina", descricao: "Propõe expansão da telemedicina para regiões remotas." },
+  { id: "7-sau-3", titulo: "Redução de filas", descricao: "Propõe sistema digital de agendamento para reduzir filas no SUS." },
+  ],
+  "Segurança": [
+  { id: "7-seg-1", titulo: "Mais efetivo policial", descricao: "Defende aumento do número de policiais nas ruas." },
+  { id: "7-seg-2", titulo: "Penas mais rígidas", descricao: "Propõe endurecimento das penas para crimes violentos." },
+  ],
+  "Meio Ambiente": [
+  { id: "7-mei-1", titulo: "Revisão de regulações", descricao: "Contrário a restrições ambientais que impactam o agronegócio." },
+  ],
+  "Direitos Civis": [
+  { id: "7-dir-1", titulo: "Posição mista", descricao: "Apoia alguns direitos civis mas é contrário a outros avanços." },
+  ],
+  "Religião no Estado": [
+  { id: "7-rel-1", titulo: "Valores religiosos", descricao: "Defende maior presença de valores religiosos nas políticas públicas." },
+  ],
+  "Privatização": [
+  { id: "7-pri-1", titulo: "Privatização de estatais", descricao: "Favorável à privatização de estatais e serviços públicos." },
+  { id: "7-pri-2", titulo: "Concessões", descricao: "Defende modelo de concessões para infraestrutura." },
+  ],
+  "Impostos": [
+  { id: "7-imp-1", titulo: "Contra aumento de impostos", descricao: "Contrário ao aumento de impostos para qualquer faixa de renda." },
+  ],
+  "Programas Sociais": [
+  { id: "7-pro-1", titulo: "Programas focalizados", descricao: "Apoia programas sociais condicionados à capacitação profissional." },
+  { id: "7-pro-2", titulo: "Contra expansão ampla", descricao: "Contrário à expansão irrestrita de benefícios sociais." },
+  ], 
+    
   }
+  
 },
+
+/*
+---------------------------------------candidato 8--------------------------------------------
+*/
+
 {
   id: 8,
   nome: "Candidato H",
   partido: "Partido R",
   foto: "/src/assets/candidatos/candidato_h.svg",
   propostas: {
-    "Economia": { posicao: "contra", descricao: "Defende fortalecimento da indústria nacional via estado." },
-    "Educação": { posicao: "a favor", descricao: "Propõe valorização salarial dos professores." },
-    "Saúde": { posicao: "a favor", descricao: "Defende criação de novas unidades públicas de saúde." },
-    "Segurança": { posicao: "misto", descricao: "Propõe integração entre segurança e assistência social." },
-    "Meio Ambiente": { posicao: "a favor", descricao: "Defende metas rígidas de preservação ambiental." },
-    "Direitos Civis": { posicao: "a favor", descricao: "Propõe fortalecimento de políticas de igualdade." },
-    "Religião no Estado": { posicao: "contra", descricao: "Defende neutralidade religiosa do estado." },
-    "Privatização": { posicao: "contra", descricao: "Contrário à privatização de serviços essenciais." },
-    "Impostos": { posicao: "a favor", descricao: "Defende maior tributação sobre alta renda." },
-    "Programas Sociais": { posicao: "a favor", descricao: "Defende expansão de programas habitacionais e alimentares." },
+  "Economia": [
+  { id: "8-eco-1", titulo: "Controle estatal", descricao: "Defende maior intervenção do estado em setores estratégicos." },
+  ],
+  "Educação": [
+  { id: "8-edu-1", titulo: "Universidades públicas", descricao: "Propõe aumento do investimento em universidades federais." },
+  ],
+  "Saúde": [
+  { id: "8-sau-1", titulo: "Expansão do SUS", descricao: "Defende expansão e fortalecimento do sistema único de saúde." },
+  { id: "8-sau-2", titulo: "Atenção básica", descricao: "Propõe ampliação de unidades básicas de saúde em periferias." },
+  ],
+  "Segurança": [
+  { id: "8-seg-1", titulo: "Mais efetivo policial", descricao: "Defende aumento do número de policiais nas ruas." },
+  { id: "8-seg-2", titulo: "Penas mais rígidas", descricao: "Propõe endurecimento das penas para crimes violentos." },
+  ],
+  "Meio Ambiente": [
+  { id: "8-mei-1", titulo: "Revisão de regulações", descricao: "Contrário a restrições ambientais que impactam o agronegócio." },
+  ],
+  "Direitos Civis": [
+  { id: "8-dir-1", titulo: "Posição mista", descricao: "Apoia alguns direitos civis mas é contrário a outros avanços." },
+  ],
+  "Religião no Estado": [
+  { id: "8-rel-1", titulo: "Valores religiosos", descricao: "Defende maior presença de valores religiosos nas políticas públicas." },
+  ],
+  "Privatização": [
+  { id: "8-pri-1", titulo: "Privatização de estatais", descricao: "Favorável à privatização de estatais e serviços públicos." },
+  { id: "8-pri-2", titulo: "Concessões", descricao: "Defende modelo de concessões para infraestrutura." },
+  ],
+  "Impostos": [
+  { id: "8-imp-1", titulo: "Contra aumento de impostos", descricao: "Contrário ao aumento de impostos para qualquer faixa de renda." },
+  ],
+  "Programas Sociais": [
+  { id: "8-pro-1", titulo: "Programas focalizados", descricao: "Apoia programas sociais condicionados à capacitação profissional." },
+  { id: "8-pro-2", titulo: "Contra expansão ampla", descricao: "Contrário à expansão irrestrita de benefícios sociais." },
+  ],
+    
   }
+  
 },
+
+/*
+---------------------------------------candidato 9--------------------------------------------
+*/
 {
   id: 9,
   nome: "Candidato I",
   partido: "Partido T",
   foto: "/src/assets/candidatos/candidato_i.svg",
   propostas: {
-    "Economia": { posicao: "misto", descricao: "Propõe equilíbrio fiscal com estímulo ao consumo." },
-    "Educação": { posicao: "neutro", descricao: "Sem grandes mudanças previstas para educação." },
-    "Saúde": { posicao: "misto", descricao: "Defende ampliação gradual do atendimento médico." },
-    "Segurança": { posicao: "misto", descricao: "Defende políticas integradas de segurança pública." },
-    "Meio Ambiente": { posicao: "misto", descricao: "Busca conciliar agronegócio e preservação." },
-    "Direitos Civis": { posicao: "neutro", descricao: "Sem posicionamento explícito sobre o tema." },
-    "Religião no Estado": { posicao: "neutro", descricao: "Não apresenta propostas sobre religião no estado." },
-    "Privatização": { posicao: "misto", descricao: "Favorável à privatização parcial de setores específicos." },
-    "Impostos": { posicao: "misto", descricao: "Defende reforma tributária gradual." },
-    "Programas Sociais": { posicao: "misto", descricao: "Apoia manutenção dos programas atuais." },
+  "Economia": [
+  { id: "9-eco-1", titulo: "Redução de impostos", descricao: "Propõe corte de impostos para pequenas empresas visando geração de empregos." },
+  { id: "9-eco-2", titulo: "Incentivo ao empreendedorismo", descricao: "Defende linhas de crédito facilitadas para novos negócios." },
+  ],
+  "Educação": [
+  { id: "9-edu-1", titulo: "Ensino técnico", descricao: "Propõe expansão de escolas técnicas federais em todo o país." },
+  ],
+  "Saúde": [
+  { id: "9-sau-1", titulo: "Parcerias público-privadas", descricao: "Defende gestão privada de hospitais públicos para maior eficiência." },
+  { id: "9-sau-2", titulo: "Telemedicina", descricao: "Propõe expansão da telemedicina para regiões remotas." },
+  { id: "9-sau-3", titulo: "Redução de filas", descricao: "Propõe sistema digital de agendamento para reduzir filas no SUS." },
+  ],   
+  "Segurança": [
+  { id: "9-seg-1", titulo: "Mais efetivo policial", descricao: "Defende aumento do número de policiais nas ruas." },
+  { id: "9-seg-2", titulo: "Penas mais rígidas", descricao: "Propõe endurecimento das penas para crimes violentos." },
+  ],
+  "Meio Ambiente": [
+  { id: "9-mei-1", titulo: "Revisão de regulações", descricao: "Contrário a restrições ambientais que impactam o agronegócio." },
+  ],
+  "Direitos Civis": [
+  { id: "9-dir-1", titulo: "Posição mista", descricao: "Apoia alguns direitos civis mas é contrário a outros avanços." },
+  ],
+  "Religião no Estado": [
+  { id: "9-rel-1", titulo: "Valores religiosos", descricao: "Defende maior presença de valores religiosos nas políticas públicas." },
+  ],
+  "Privatização": [
+  { id: "9-pri-1", titulo: "Privatização de estatais", descricao: "Favorável à privatização de estatais e serviços públicos." },
+  { id: "9-pri-2", titulo: "Concessões", descricao: "Defende modelo de concessões para infraestrutura." },
+  ],
+  "Impostos": [
+  { id: "9-imp-1", titulo: "Contra aumento de impostos", descricao: "Contrário ao aumento de impostos para qualquer faixa de renda." },
+  ],
+  "Programas Sociais": [
+  { id: "9-pro-1", titulo: "Programas focalizados", descricao: "Apoia programas sociais condicionados à capacitação profissional." },
+  { id: "9-pro-2", titulo: "Contra expansão ampla", descricao: "Contrário à expansão irrestrita de benefícios sociais." },
+  ], 
   }
+  
 },
+
+/*
+---------------------------------------candidato 10--------------------------------------------
+*/
 {
   id: 10,
   nome: "Candidato J",
   partido: "Partido S",
   foto: "/src/assets/candidatos/candidato_j.svg",
   propostas: {
-    "Economia": { posicao: "a favor", descricao: "Defende cortes de gastos públicos e incentivo ao mercado." },
-    "Educação": { posicao: "contra", descricao: "Contrário ao aumento significativo do investimento público." },
-    "Saúde": { posicao: "contra", descricao: "Defende maior participação da iniciativa privada." },
-    "Segurança": { posicao: "a favor", descricao: "Defende tolerância zero ao crime organizado." },
-    "Meio Ambiente": { posicao: "contra", descricao: "Contrário a restrições ambientais consideradas excessivas." },
-    "Direitos Civis": { posicao: "misto", descricao: "Apoia alguns direitos individuais específicos." },
-    "Religião no Estado": { posicao: "a favor", descricao: "Defende princípios religiosos na formulação de leis." },
-    "Privatização": { posicao: "a favor", descricao: "Defende privatização ampla de serviços públicos." },
-    "Impostos": { posicao: "contra", descricao: "Propõe redução generalizada de impostos." },
-    "Programas Sociais": { posicao: "contra", descricao: "Defende redução gradual de benefícios sociais." },
+  "Economia": [
+  { id: "10-eco-1", titulo: "Redução de impostos", descricao: "Propõe corte de impostos para pequenas empresas visando geração de empregos." },
+  { id: "10-eco-2", titulo: "Incentivo ao empreendedorismo", descricao: "Defende linhas de crédito facilitadas para novos negócios." },
+  ],
+  "Educação": [
+  { id: "10-edu-1", titulo: "Ensino técnico", descricao: "Propõe expansão de escolas técnicas federais em todo o país." },
+  ],
+  "Saúde": [
+  { id: "10-sau-1", titulo: "Parcerias público-privadas", descricao: "Defende gestão privada de hospitais públicos para maior eficiência." },
+  { id: "10-sau-2", titulo: "Telemedicina", descricao: "Propõe expansão da telemedicina para regiões remotas." },
+  { id: "10-sau-3", titulo: "Redução de filas", descricao: "Propõe sistema digital de agendamento para reduzir filas no SUS." },
+  ],  
+  "Segurança": [
+  { id: "10-seg-1", titulo: "Mais efetivo policial", descricao: "Defende aumento do número de policiais nas ruas." },
+  { id: "10-seg-2", titulo: "Penas mais rígidas", descricao: "Propõe endurecimento das penas para crimes violentos." },
+  ],
+  "Meio Ambiente": [
+  { id: "10-mei-1", titulo: "Revisão de regulações", descricao: "Contrário a restrições ambientais que impactam o agronegócio." },
+  ],
+  "Direitos Civis": [
+  { id: "10-dir-1", titulo: "Posição mista", descricao: "Apoia alguns direitos civis mas é contrário a outros avanços." },
+  ],
+  "Religião no Estado": [
+  { id: "10-rel-1", titulo: "Valores religiosos", descricao: "Defende maior presença de valores religiosos nas políticas públicas." },
+  ],
+  "Privatização": [
+  { id: "10-pri-1", titulo: "Privatização de estatais", descricao: "Favorável à privatização de estatais e serviços públicos." },
+  { id: "10-pri-2", titulo: "Concessões", descricao: "Defende modelo de concessões para infraestrutura." },
+  ],
+  "Impostos": [
+  { id: "10-imp-1", titulo: "Contra aumento de impostos", descricao: "Contrário ao aumento de impostos para qualquer faixa de renda." },
+  ],
+  "Programas Sociais": [
+  { id: "10-pro-1", titulo: "Programas focalizados", descricao: "Apoia programas sociais condicionados à capacitação profissional." },
+  { id: "10-pro-2", titulo: "Contra expansão ampla", descricao: "Contrário à expansão irrestrita de benefícios sociais." },
+  ],   
   }
+  
 },
+
+/*
+---------------------------------------candidato 11--------------------------------------------
+*/
 {
   id: 11,
   nome: "Candidato K",
   partido: "Partido U",
   foto: "/src/assets/candidatos/candidato_k.svg",
   propostas: {
-    "Economia": { posicao: "contra", descricao: "Defende fortalecimento do papel estatal na economia." },
-    "Educação": { posicao: "a favor", descricao: "Propõe ensino integral em escolas públicas." },
-    "Saúde": { posicao: "a favor", descricao: "Defende aumento do orçamento da saúde." },
-    "Segurança": { posicao: "misto", descricao: "Propõe prevenção social combinada ao policiamento." },
-    "Meio Ambiente": { posicao: "a favor", descricao: "Defende combate rigoroso às queimadas ilegais." },
-    "Direitos Civis": { posicao: "a favor", descricao: "Apoia expansão de direitos civis e sociais." },
-    "Religião no Estado": { posicao: "contra", descricao: "Defende separação completa entre religião e estado." },
-    "Privatização": { posicao: "contra", descricao: "Contrário à venda de empresas públicas estratégicas." },
-    "Impostos": { posicao: "a favor", descricao: "Defende maior progressividade tributária." },
-    "Programas Sociais": { posicao: "a favor", descricao: "Propõe ampliação de benefícios sociais." },
+  "Economia": [
+  { id: "11-eco-1", titulo: "Redução de impostos", descricao: "Propõe corte de impostos para pequenas empresas visando geração de empregos." },
+  { id: "11-eco-2", titulo: "Incentivo ao empreendedorismo", descricao: "Defende linhas de crédito facilitadas para novos negócios." },
+  ],
+  "Educação": [
+  { id: "11-edu-1", titulo: "Ensino técnico", descricao: "Propõe expansão de escolas técnicas federais em todo o país." },
+  ],
+  "Saúde": [
+  { id: "11-sau-1", titulo: "Parcerias público-privadas", descricao: "Defende gestão privada de hospitais públicos para maior eficiência." },
+  { id: "11-sau-2", titulo: "Telemedicina", descricao: "Propõe expansão da telemedicina para regiões remotas." },
+  { id: "11-sau-3", titulo: "Redução de filas", descricao: "Propõe sistema digital de agendamento para reduzir filas no SUS." },
+  ], 
+  "Segurança": [
+  { id: "11-seg-1", titulo: "Mais efetivo policial", descricao: "Defende aumento do número de policiais nas ruas." },
+  { id: "11-seg-2", titulo: "Penas mais rígidas", descricao: "Propõe endurecimento das penas para crimes violentos." },
+  ],
+  "Meio Ambiente": [
+  { id: "11-mei-1", titulo: "Revisão de regulações", descricao: "Contrário a restrições ambientais que impactam o agronegócio." },
+  ],
+  "Direitos Civis": [
+  { id: "11-dir-1", titulo: "Posição mista", descricao: "Apoia alguns direitos civis mas é contrário a outros avanços." },
+  ],
+  "Religião no Estado": [
+  { id: "11-rel-1", titulo: "Valores religiosos", descricao: "Defende maior presença de valores religiosos nas políticas públicas." },
+  ],
+  "Privatização": [
+  { id: "11-pri-1", titulo: "Privatização de estatais", descricao: "Favorável à privatização de estatais e serviços públicos." },
+  { id: "11-pri-2", titulo: "Concessões", descricao: "Defende modelo de concessões para infraestrutura." },
+  ],
+  "Impostos": [
+  { id: "11-imp-1", titulo: "Contra aumento de impostos", descricao: "Contrário ao aumento de impostos para qualquer faixa de renda." },
+  ],
+  "Programas Sociais": [
+  { id: "11-pro-1", titulo: "Programas focalizados", descricao: "Apoia programas sociais condicionados à capacitação profissional." },
+  { id: "11-pro-2", titulo: "Contra expansão ampla", descricao: "Contrário à expansão irrestrita de benefícios sociais." },
+  ],    
   }
+  
 },
+
+/*
+---------------------------------------candidato 12--------------------------------------------
+*/
 {
   id: 12,
   nome: "Candidato L",
   partido: "Partido V",
   foto: "/src/assets/candidatos/candidato_l.svg",
   propostas: {
-    "Economia": { posicao: "misto", descricao: "Defende equilíbrio entre responsabilidade fiscal e investimento social." },
-    "Educação": { posicao: "misto", descricao: "Propõe revisão gradual das políticas educacionais." },
-    "Saúde": { posicao: "misto", descricao: "Defende melhoria da gestão pública da saúde." },
-    "Segurança": { posicao: "a favor", descricao: "Defende uso de tecnologia na segurança pública." },
-    "Meio Ambiente": { posicao: "misto", descricao: "Propõe desenvolvimento sustentável gradual." },
-    "Direitos Civis": { posicao: "neutro", descricao: "Sem propostas específicas sobre direitos civis." },
-    "Religião no Estado": { posicao: "neutro", descricao: "Não possui posicionamento claro sobre o tema." },
-    "Privatização": { posicao: "misto", descricao: "Favorável à privatização seletiva." },
-    "Impostos": { posicao: "misto", descricao: "Defende simplificação tributária." },
-    "Programas Sociais": { posicao: "misto", descricao: "Defende manutenção de programas sociais existentes." },
+  "Economia": [
+  { id: "12-eco-1", titulo: "Redução de impostos", descricao: "Propõe corte de impostos para pequenas empresas visando geração de empregos." },
+  { id: "12-eco-2", titulo: "Incentivo ao empreendedorismo", descricao: "Defende linhas de crédito facilitadas para novos negócios." },
+  ],
+  "Educação": [
+  { id: "12-edu-1", titulo: "Ensino técnico", descricao: "Propõe expansão de escolas técnicas federais em todo o país." },
+  ],
+  "Saúde": [
+  { id: "12-sau-1", titulo: "Parcerias público-privadas", descricao: "Defende gestão privada de hospitais públicos para maior eficiência." },
+  { id: "12-sau-3", titulo: "Redução de filas", descricao: "Propõe sistema digital de agendamento para reduzir filas no SUS." },
+  { id: "12-sau-2", titulo: "Telemedicina", descricao: "Propõe expansão da telemedicina para regiões remotas." },
+  ],
+  "Segurança": [
+  { id: "12-seg-1", titulo: "Mais efetivo policial", descricao: "Defende aumento do número de policiais nas ruas." },
+  { id: "12-seg-2", titulo: "Penas mais rígidas", descricao: "Propõe endurecimento das penas para crimes violentos." },
+  ],
+  "Meio Ambiente": [
+  { id: "12-mei-1", titulo: "Revisão de regulações", descricao: "Contrário a restrições ambientais que impactam o agronegócio." },
+  ],
+  "Direitos Civis": [
+  { id: "12-dir-1", titulo: "Posição mista", descricao: "Apoia alguns direitos civis mas é contrário a outros avanços." },
+  ],
+  "Religião no Estado": [
+  { id: "12-rel-1", titulo: "Valores religiosos", descricao: "Defende maior presença de valores religiosos nas políticas públicas." },
+  ],
+  "Privatização": [
+  { id: "12-pri-1", titulo: "Privatização de estatais", descricao: "Favorável à privatização de estatais e serviços públicos." },
+  { id: "12-pri-2", titulo: "Concessões", descricao: "Defende modelo de concessões para infraestrutura." },
+  ],
+  "Impostos": [
+  { id: "12-imp-1", titulo: "Contra aumento de impostos", descricao: "Contrário ao aumento de impostos para qualquer faixa de renda." },
+  ],
+  "Programas Sociais": [
+  { id: "12-pro-1", titulo: "Programas focalizados", descricao: "Apoia programas sociais condicionados à capacitação profissional." },
+  { id: "12-pro-2", titulo: "Contra expansão ampla", descricao: "Contrário à expansão irrestrita de benefícios sociais." },
+  ], 
+    
   }
+  
 },
+
+/*
+---------------------------------------candidato 13--------------------------------------------
+*/
 {
   id: 13,
   nome: "Candidato M",
-  partido: "Partido P",
+  partido: "Partido W",
   foto: "/src/assets/candidatos/candidato_m.svg",
   propostas: {
-    "Economia": { posicao: "a favor", descricao: "Defende incentivo à inovação e empreendedorismo." },
-    "Educação": { posicao: "a favor", descricao: "Propõe expansão do ensino técnico." },
-    "Saúde": { posicao: "misto", descricao: "Defende modernização da infraestrutura hospitalar." },
-    "Segurança": { posicao: "a favor", descricao: "Defende integração nacional das forças de segurança." },
-    "Meio Ambiente": { posicao: "misto", descricao: "Busca equilíbrio entre preservação e produção." },
-    "Direitos Civis": { posicao: "misto", descricao: "Apoia parcialmente pautas de direitos civis." },
-    "Religião no Estado": { posicao: "a favor", descricao: "Defende valorização de princípios religiosos." },
-    "Privatização": { posicao: "a favor", descricao: "Defende privatizações em áreas não essenciais." },
-    "Impostos": { posicao: "contra", descricao: "Defende redução gradual da carga tributária." },
-    "Programas Sociais": { posicao: "misto", descricao: "Defende programas sociais com foco em empregabilidade." },
+  "Economia": [
+  { id: "13-eco-1", titulo: "Controle estatal", descricao: "Defende maior intervenção do estado em setores estratégicos." },
+  ],
+  "Educação": [
+  { id: "13-edu-1", titulo: "Universidades públicas", descricao: "Propõe aumento do investimento em universidades federais." },
+  ],
+  "Saúde": [
+  { id: "13-sau-1", titulo: "Expansão do SUS", descricao: "Defende expansão e fortalecimento do sistema único de saúde." },
+  ],
+  "Segurança": [
+  { id: "13-seg-1", titulo: "Mais efetivo policial", descricao: "Defende aumento do número de policiais nas ruas." },
+  { id: "13-seg-2", titulo: "Penas mais rígidas", descricao: "Propõe endurecimento das penas para crimes violentos." },
+  ],
+  "Meio Ambiente": [
+  { id: "13-mei-1", titulo: "Revisão de regulações", descricao: "Contrário a restrições ambientais que impactam o agronegócio." },
+  ],
+  "Direitos Civis": [
+  { id: "13-dir-1", titulo: "Posição mista", descricao: "Apoia alguns direitos civis mas é contrário a outros avanços." },
+  ],
+  "Religião no Estado": [
+  { id: "13-rel-1", titulo: "Valores religiosos", descricao: "Defende maior presença de valores religiosos nas políticas públicas." },
+  ],
+  "Privatização": [
+  { id: "13-pri-1", titulo: "Privatização de estatais", descricao: "Favorável à privatização de estatais e serviços públicos." },
+  { id: "13-pri-2", titulo: "Concessões", descricao: "Defende modelo de concessões para infraestrutura." },
+  ],
+  "Impostos": [
+  { id: "13-imp-1", titulo: "Contra aumento de impostos", descricao: "Contrário ao aumento de impostos para qualquer faixa de renda." },
+  ],
+  "Programas Sociais": [
+  { id: "13-pro-1", titulo: "Programas focalizados", descricao: "Apoia programas sociais condicionados à capacitação profissional." },
+  { id: "13-pro-2", titulo: "Contra expansão ampla", descricao: "Contrário à expansão irrestrita de benefícios sociais." },
+  ],
+
   }
-}
+  
+},
+
 ]
