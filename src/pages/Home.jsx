@@ -6,12 +6,14 @@ import CardsCandidatos from "../components/CardsCandidatos"
 function Home() {
   const [categoriaSelecionada, setCategoriaSelecionada] = useState(null) //nenhuma categoria selecionada ainda
   const [pauta, setPauta] = useState("")
+  const [consultaAnalisada, setconsultaAnalisada] = useState("")
   const [analisado, setAnalisado] = useState(false) //consulta feita = false
   const [analisando, setAnalisando] = useState(false)
 
   function handleCategoria(categoria) {
     setCategoriaSelecionada(categoria)
     setPauta("")
+    setconsultaAnalisada("")
     setAnalisado(false)
   }
 
@@ -20,6 +22,7 @@ function Home() {
   if (!pauta.trim()) return
   setAnalisando(true)
   await new Promise((resolve) => setTimeout(resolve, 1500))
+  setconsultaAnalisada(pauta)
   setAnalisando(false)
   setAnalisado(true)
   }
@@ -56,7 +59,7 @@ function Home() {
           </div>
         </div>
 
-        <CardsCandidatos categoria={categoriaSelecionada} analisado={analisado}/>
+        <CardsCandidatos categoria={categoriaSelecionada} analisado={analisado} consulta={consultaAnalisada}/>
 
         </>
         )

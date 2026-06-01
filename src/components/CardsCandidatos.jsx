@@ -9,7 +9,7 @@ const coresPosicao = {
   "neutro": "bg-gray-100 text-gray-500 border border-gray-300",
 }
 
-function CardsCandidatos({ categoria, analisado }) {
+function CardsCandidatos({ categoria, analisado, consulta}) {
   const [expandido, setExpandido] = useState(null) //estado dos cards expandidos - inicialmente nenhum card expandido - valor null
 
   return (
@@ -26,7 +26,7 @@ function CardsCandidatos({ categoria, analisado }) {
           // O '??' garante que se não houver nenhuma proposta desse candidato nesta categoria então 'todasPropostas' recebe um array vazio '[]'
           const todasPropostas = candidato.propostas[categoria] ?? [] 
 
-          const resultado = analisado? analisarCandidato(candidato,categoria) : null //retorna uma posicao(a favor, misto, contra, neutro) mas só se 'analisado' = true
+          const resultado = analisado? analisarCandidato(candidato,categoria,consulta) : null //retorna uma posicao(a favor, misto, contra, neutro) mas só se 'analisado' = true
           
           const propostas = analisado ? resultado.propostasOrdenadas : todasPropostas //funcionalidade em analisarCandidato() que ordena as propostas
 

@@ -93,7 +93,7 @@ propostas: {
 --------------------------------------------candidato 3--------------------------------------------
 */
 {
-id: 1,
+id: 3,
 nome: "Candidato C",
 partido: "Partido Z",
 foto: "/src/assets/candidatos/candidato_c.svg",
