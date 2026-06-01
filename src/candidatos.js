@@ -6,10 +6,11 @@ partido: "Partido X",
 foto: "/src/assets/candidatos/candidato_a.svg",
 propostas: {
 "Economia": [
-{ id: "1-eco-1", titulo: "Redução de impostos", descricao: "Propõe corte de impostos para pequenas empresas visando geração de empregos." },
-{ id: "1-eco-2", titulo: "Incentivo ao empreendedorismo", descricao: "Defende linhas de crédito facilitadas para novos negócios." },
+{ id: "1-eco-1", titulo: "Redução de impostos", descricao: "Propõe corte de impostos para pequenas empresas visando geração de empregos. Propõe corte de impostos para pequenas empresas visando geração de empregos." },
+{ id: "1-eco-2", titulo: "Incentivo ao empreendedorismo", descricao: "Defende linhas de crédito facilitadas para novos negócios. Propõe corte de impostos para pequenas empresas visando geração de empregos. Propõe corte de impostos para pequenas empresas visando geração de empregos." },
 { id: "1-eco-3", titulo: "Redução de impostos", descricao: "Propõe corte de impostos para pequenas empresas visando geração de empregos." },
 { id: "1-eco-4", titulo: "Incentivo ao empreendedorismo", descricao: "Defende linhas de crédito facilitadas para novos negócios." },
+{ id: "1-eco-5", titulo: "Proposta 5", descricao: "Defende linhas de crédito facilitadas para novos negócios. Defende linhas de crédito facilitadas para novos negócios." },
 ],
 "Educação": [
 { id: "1-edu-1", titulo: "Ensino técnico", descricao: "Propõe expansão de escolas técnicas federais em todo o país." },
@@ -27,7 +28,7 @@ propostas: {
 { id: "1-mei-1", titulo: "Revisão de regulações", descricao: "Contrário a restrições ambientais que impactam o agronegócio." },
 ],
 "Direitos Civis": [
-{ id: "1-dir-1", titulo: "Posição mista", descricao: "Apoia alguns direitos civis mas é contrário a outros avanços." },
+{ id: "1-dir-1", titulo: "Nome da proposta Nome Nome", descricao: "Apoia alguns direitos civis mas é contrário a outros avanços." },
 ],
 "Religião no Estado": [
 { id: "1-rel-1", titulo: "Valores religiosos", descricao: "Defende maior presença de valores religiosos nas políticas públicas." },

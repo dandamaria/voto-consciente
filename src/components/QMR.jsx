@@ -17,7 +17,7 @@ function QMR({ categoriaSelecionada, onSelecionarCategoria }) {
   const [aberto, setAberto] = useState(false) //estado do menu que abre e fecha
   const selecionado = categoriaSelecionada //só um apelido pra categoriaSelecionada
 
-  function selecionar(categoria) {
+  function selecionar(categoria) { 
     onSelecionarCategoria(categoria) //seleciona categoria 
     setAberto(false) //fecha o menu
   }
@@ -65,23 +65,29 @@ function QMR({ categoriaSelecionada, onSelecionarCategoria }) {
                   onClick={() => setAberto(!aberto)} //abre ou fecha o menu - vai fazer sempre o contrário do estado que tá
                   className="flex items-center justify-between w-full px-5 py-4 border border-gray-300 rounded-xl text-gray-700 font-medium hover:bg-gray-50"
                 >
-                  <span>{selecionado ?? "Selecionar Categoria"}</span>
+                  <span>{selecionado ?? "Selecionar Categoria"}</span> {/* '??' é um Operador de Coalescência.
+                  'selecionado' é um estado do React que recebe uma string ou um valor null/undefined. O que o operador faz:
+                  Se selecionado tiver um valor válido (a string) então mostra esse valor, Senão, ou seja, o valor de selecionado = null. Então mostra "Selecionar Categoria".
+                  */}
                   <span className="text-gray-400">{aberto ? "▲" : "▼"}</span>
                 </button>
 
                 {/* Lista de opções */}
-                {aberto && (
-                  <div className="absolute top-full left-0 w-full mt-1 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden z-10">
-                    {categorias.map((categoria) => {
-                      const estaSelecionada = selecionado === categoria
+                {aberto && ( //se aberto for verdade faz () - é um if(aberto) mais compacto
+                  <div className="absolute top-full left-0 w-full mt-1 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden z-10"> {/*mostra dropdown*/}
+                    {categorias.map((categoria) => { //o código a seguir vai ser executado para CADA 'categoria' - função map()
+                      const estaSelecionada = selecionado === categoria /* aqui o javascript calcula sozinho o valor de estaSelecionada, como? 
+                      se o valor de 'selecionado' for igual ao de 'categoria' então é true, senão, false. É algo como:
+                      variável booleana estaSelecionada = (valor_de_selecionado é igual a valor_de_categoria)? (Sim ou Não - True or False) 
+                      Nesse caso: se a categoria selecionada for a mesma em que o map() está -> estaSelecionada recebe true*/
                       return (
                         <button
                           key={categoria}
-                          onClick={() => selecionar(categoria)}
+                          onClick={() => selecionar(categoria)} //se o usuário clicar nesse botão ele chama a função selecionar(categoria), 'categoria' nesse caso é o estado atual que o map tá passando
                           className={`
                             w-full text-left px-5 py-3 text-sm font-medium text-gray-700
                             hover:bg-black/20
-                            ${estaSelecionada ? "border-l-4 border-green-500" : "border-l-4 border-transparent"}
+                            ${estaSelecionada ? "border-l-4 border-green-500" : "border-l-4 border-transparent" /* Se estaSelecionada é true faz o que tem antes de ':' se for false faz o que tem depois*/ } 
                           `}
                         >
                           {categoria}
