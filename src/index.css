@@ -3,3 +3,16 @@
 * {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+.modal-scrollbar::-webkit-scrollbar {
+  width: 16px; /* Aumenta a largura aqui */
+}
+
+.modal-scrollbar::-webkit-scrollbar-track {
+  background: #e1e1e1; /* Cor do fundo da barra */
+}
+
+.modal-scrollbar::-webkit-scrollbar-thumb {
+  background: #ebc609; /* Cor do puxador do scroll */
+  border-radius: 10px; /* Bordas arredondadas opcionais */
+}

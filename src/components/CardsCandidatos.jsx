@@ -10,6 +10,13 @@ const coresPosicao = {
   "neutro": "bg-gray-100 text-gray-500 border border-gray-300",
 }
 
+const coresBotaoExpandir = {
+  "a favor": "bg-green-500 hover:bg-green-600",
+  "contra": "bg-red-500 hover:bg-red-600",
+  "misto": "bg-yellow-500 hover:bg-yellow-600",
+  "neutro": "bg-gray-500 hover:bg-gray-600",
+}
+
 function CardsCandidatos({ categoria, analisado, consulta}) {
   const [candidatoAberto, setCandidatoAberto] = useState(null) //estado dos cards expandidos - inicialmente nenhum card expandido - valor null
 
@@ -63,9 +70,16 @@ function CardsCandidatos({ categoria, analisado, consulta}) {
 
               {/* Botão expandir */}
                 <button onClick={() => setCandidatoAberto({candidato,propostas,resultado})} 
-                className="mt-auto w-full py-3 bg-green-500 hover:bg-green-600 text-white text-sm font-semibold"
+                className={`
+                  mt-auto w-full py-3 text-white text-sm font-semibold
+                  ${analisado? (coresBotaoExpandir[resultado.posicao]):("bg-green-500 hover:bg-green-600")}
+                  
+                `}
                 >
+                  <span>
                     Clique para expandir
+                  </span>
+                    
                 </button>
 
             </div>
