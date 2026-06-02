@@ -5,21 +5,24 @@ function ModalCandidato({ candidato, propostas, resultado, onFechar }) {
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center">
 
-      <div className="bg-white p-6 rounded-2xl w-[800px]">
+      <div className="bg-white p-6 rounded-2xl w-[90vw] h-[80vh] flex flex-col">
 
-        <button onClick={onFechar}>Fechar</button>
+        <button onClick={onFechar} className="t-auto rounded-xl py-2 bg-green-800 hover:bg-green-600 text-white text-lm font-semibold">Clique para fechar</button>
 
-        <h2>{candidato.nome}</h2>
+        <h2 className="text-xl py-1 pt-3">{candidato.nome}</h2>
 
-        {propostas.map((proposta) => (
-          <div
-            key={proposta.id}
-            className="border rounded-xl p-4 my-2"
-          >
-            <p>{proposta.titulo}</p>
-            <p className="text-xs text-gray-1000">{proposta.descricao}</p>
-          </div>
-        ))}
+        <div className="overflow-auto flex-1">
+          {/*LISTA DAS PROPOSTAS */}
+          {propostas.map((proposta) => (
+            <div
+              key={proposta.id}
+              className="border rounded-xl p-4 my-2"
+            >
+              <p>{proposta.titulo}</p>
+              <p className="text-xs text-gray-1000">{proposta.descricao}</p>
+            </div>
+          ))}
+        </div>
 
       </div>
 
